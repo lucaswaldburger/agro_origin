@@ -1,0 +1,19 @@
+# Cached API responses and fetched pages — re-derivable, and some are stale or malformed.
+# ps.json in particular is a single 1,000-record Datasets page containing only
+# Chromosome/Complete assemblies, so its summary statistics are size-biased.
+*.json
+*.xml
+*.html
+
+# Working directories (see docs/research-program.md — all work lives under /mnt/data/agro)
+work/
+parquet/
+cards/
+logs/
+ref/
+
+# Environments
+env/
+.venv/
+__pycache__/
+.Rhistory
