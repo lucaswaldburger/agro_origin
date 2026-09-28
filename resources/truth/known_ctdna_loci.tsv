@@ -1,0 +1,13 @@
+# Positive controls. Must be recovered through the production streaming path.
+# fixed: Y = fixed in the species, N = segregating (empty insertion sites found)
+# Ages are AS PUBLISHED and are NOT to be cited -- re-derive them (see date.nf).
+species	locus	genes	coords	fixed	published_age_my	source
+Camellia sinensis	CaTA	acs, susL, rolB (all pseudogenized)	chr9:78660407-78665693	Y	15	Chen 2022 Front Plant Sci 13:997762
+Camellia spp.	CaTA-CaTL (12 types)	47 ORFs across 374 kb	-	mixed	0.075-15	Chen 2023 Planta 258:81
+Diospyros kaki	DiTA-DiTO (7 of 15 types)	628 kb across 27 of 42 homeologs	-	N (5 of 7)	3-12	Otten 2025 Plant J 122:e70202
+Nicotiana tomentosiformis	TA, TB, TC, TD	plast, opine	-	Y	-	Chen 2014 Plant J 80:669
+Nicotiana otophora	TC, TE	10 intact ORFs incl. 3 functional 6b, 83 kb	-	Y	-	Chen 2018 Plant J 94:274
+Nicotiana glauca	cT-DNA	rolB, rolC, orf13, orf14	-	Y	-	classical
+Linaria vulgaris	cT-DNA	mis (mikimopine synthase)	-	Y	~1	Kovacova 2014
+Ipomoea batatas	IbT-DNA1	iaaM, ipt	-	Y (291/291 cultigens)	-	Kyndt 2015 PNAS 112:5844
+Ipomoea batatas	IbT-DNA2	-	-	N (45/217)	-	Kyndt 2015 PNAS 112:5844

@@ -1,0 +1,58 @@
+# micromamba create -p /mnt/data/agro/env -f environment.yml
+#
+# The root filesystem is full -- install to /mnt/data, not $HOME.
+# Verified absent on the current host: everything below except blast, R,
+# python3, pigz and curl.
+name: agro-origin
+channels: [conda-forge, bioconda]
+dependencies:
+  - python=3.11
+  # acquisition
+  - ncbi-datasets-cli
+  - awscli
+  - s5cmd
+  # homology search
+  - diamond
+  - hmmer
+  - blast
+  - mmseqs2
+  - miniprot
+  # alignment and assembly
+  - minimap2
+  - lastz
+  - mafft
+  - macse          # scores nt through AA translation, allows internal stops/frameshifts
+  - trimal
+  - spades
+  - hifiasm
+  # sequence and interval handling
+  - seqkit
+  - bedtools
+  - samtools
+  - mosdepth
+  # contamination
+  - kraken2
+  - blobtoolkit
+  - tiara
+  # phylogenetics
+  - iqtree
+  - epa-ng
+  - gappa
+  - hyphy
+  - paml
+  - beast2
+  # data
+  - duckdb
+  - pyarrow
+  - pandas
+  - numpy
+  - scipy
+  - biopython
+  # orchestration
+  - nextflow
+  # R
+  - r-base
+  - r-ape
+  - r-phytools
+  - r-corhmm
+  - bioconductor-ggtree

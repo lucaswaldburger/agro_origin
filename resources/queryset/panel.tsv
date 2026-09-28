@@ -1,0 +1,22 @@
+# Frozen family priors. Set BEFORE any data are touched; never tuned afterwards.
+# P(Agrobacterium | family hit) computed from family membership counts.
+# class: DIAGNOSTIC = family membership is informative
+#        WEAK       = family membership is NOT evidence of Agrobacterium origin
+family	pfam	description	n_total	n_agrobacterium	p_agro	class
+opine_dehydrogenase	PF02317	Opine dehydrogenase	2356	34	0.014	WEAK
+cucumopine_synthase	PF18631	Cucumopine synthase (Pictet-Spenglerase)	348	8	0.023	WEAK
+rolB_rolC	PF02027	RolB/RolC plast superfamily	203	81	0.400	DIAGNOSTIC
+rolA	-	RolA	-	-	-	DIAGNOSTIC
+rolD	-	Ornithine cyclodeaminase	-	-	-	WEAK
+orf13	-	plast subfamily (model separately from rolB)	-	-	-	DIAGNOSTIC
+orf14	-	plast subfamily	-	-	-	DIAGNOSTIC
+gene_6b	-	T-DNA oncogene 6b	-	-	-	DIAGNOSTIC
+iaaM	-	Tryptophan monooxygenase (tms1)	-	-	-	DIAGNOSTIC
+iaaH	-	Indoleacetamide hydrolase (tms2)	-	-	-	WEAK
+ipt	-	Isopentenyltransferase (tmr)	-	-	-	WEAK
+ocs	-	Octopine synthase	-	-	-	DIAGNOSTIC
+nos	-	Nopaline synthase	-	-	-	DIAGNOSTIC
+mas	-	Mannopine synthase	-	-	-	DIAGNOSTIC
+ags	-	Agrocinopine synthase	-	-	-	DIAGNOSTIC
+mis	-	Mikimopine synthase	-	-	-	DIAGNOSTIC
+acs	-	Agrocinopine/succinamopine synthase	-	-	-	DIAGNOSTIC

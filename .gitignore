@@ -1,19 +1,39 @@
-# Cached API responses and fetched pages — re-derivable, and some are stale or malformed.
-# ps.json in particular is a single 1,000-record Datasets page containing only
-# Chromosome/Complete assemblies, so its summary statistics are size-biased.
-*.json
-*.xml
-*.html
+# Cached API responses and fetched pages left by exploratory work.
+# Re-derivable; some are stale or malformed. Named explicitly rather than by
+# glob so tracked manifests and configs are not swallowed.
+/egp.json
+/liu2026.xml
+/plsdb.html
+/ps.json
 
-# Working directories (see docs/research-program.md — all work lives under /mnt/data/agro)
+# Pipeline outputs and working state. All heavy work lives under /mnt/data/agro
+# (see docs/research-program.md §8) -- the root filesystem is full.
 work/
 parquet/
 cards/
 logs/
 ref/
+.nextflow/
+.nextflow.log*
+results/
+trace.txt
+timeline.html
+report.html
+dag.svg
+
+# Large binary reference data -- fetched via resources/manifest/, never committed
+*.fa
+*.fasta
+*.fa.gz
+*.fasta.gz
+*.hmm
+*.gxi
+*.gxs
 
 # Environments
 env/
 .venv/
 __pycache__/
+*.pyc
 .Rhistory
+.RData

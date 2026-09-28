@@ -1,0 +1,12 @@
+# Pinned references. sha256 computed locally on first fetch; verified every run.
+# Populate sha256 at S0. Never fetch against a mutable 'latest' tag.
+name	source	version_or_build	size	mutable	sha256
+fcs_gx_db	s3://ncbi-fcs-gx/gxdb/	2023-01-24T16:18:22	464.3GiB	yes	PENDING
+fcs_summary_genbank	ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/	daily	52.7MB	yes	PENDING
+fcs_details_genbank	ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/	daily	475MB	yes	PENDING
+assembly_summary_genbank	ftp.ncbi.nlm.nih.gov/genomes/genbank/plant/	daily	3.9MB	yes	PENDING
+viridiplantae_census	NCBI Datasets v2alpha taxon 33090	PENDING	-	yes	PENDING
+univec	ftp.ncbi.nlm.nih.gov/pub/UniVec/	build 10.0	-	no	PENDING
+carruthers_chronograms	OSF 10.17605/OSF.IO/9TBHA	2026	2.47GB	no	PENDING
+gtdb	GTDB	R232	-	no	PENDING
+liu2026_deposit	authors' GitHub (7163 FASTA, 7149 are Git-LFS pointers)	2026	-	yes	PENDING

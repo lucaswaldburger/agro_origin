@@ -1,0 +1,13 @@
+# Must stay negative. Any pipeline that calls these positive is broken.
+accession_or_set	type	expectation	note
+KJ599825	empty_insertion_site	ABSENT	N. sylvestris empty TA site. A NEGATIVE, misfiled as a positive in at least one secondary source.
+Arabidopsis thaliana	non_carrier_panel	no cT-DNA	Tier-2 method-calibration panel, NOT a known carrier
+Oryza sativa	non_carrier_panel	no cT-DNA	as above
+Solanum lycopersicum	non_carrier_panel	no cT-DNA	as above
+Vitis vinifera	non_carrier_panel	no cT-DNA	as above
+Helianthus annuus	non_carrier_panel	no cT-DNA	as above; PRJNA532579 has lat+lon on 1527/1527 -- the reference-quality georeferenced testbed
+QS-E statistical decoy	decoy	ZERO Layer-1 passes	if decoys pass, nothing downstream means anything
+QS-E ecological decoy D3	decoy	ZERO Layer-1 passes	plant endophytes / rhizosphere / litter fungi carrying the diagnostic domains
+composition-matched null genomes	null	reproduce empirical FDR	25-state HMM per genome over intergenic sequence
+GCA_965284325.1	corpus_trap	flagged as metagenome bin	filed under Aquilegia reuteri (eudicot); is NI281-mx-bin04, 4044082 bp, 1 contig, 38.5% GC, COMPLETE GENOME
+Azolla-filed cyanobiont records	corpus_trap	flagged	7 GCA records at 4.70-4.87 Mb / 38.5% GC are Nostoc azollae, not fern
